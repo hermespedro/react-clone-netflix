@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 22px;
+    background: transparent;
+    transition: all ease 0.35s;
+}
+header.black {
+    background-color: #111111fa;
+}
+.header--logo {
+    height: 60px;
+}
+.header--logo img{
+    height: 100%;
+}
