@@ -1,7 +1,9 @@
 # Netflix Clone using React JS
 
 
-This project was created using React js. 
+A simple clone of the netflix interface built with ReactJS and consuming api from themoviedb.org
+
+This project was created using Reactjs <3
 
 ## Available Scripts
 
