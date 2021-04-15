@@ -19,7 +19,7 @@ export default () => {
       // pegando a lista total  
       let list = await Tmdb.getHomeList();
 
-      setMovieList(list)
+      setMovieList(list);
       //  pegando o featured
       let originals = list.filter(item => item.slug ==='originals');
       let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
@@ -64,6 +64,13 @@ export default () => {
         <small>Direitos de imagens Netflix</small><br/>
         <small>Produzido consumindo api de dados do themoviedb.org </small>
       </footer>
+
+      {
+        movieList.length <= 0 &&
+      <div className="loading">
+        <img src="https://media1.tenor.com/images/1fe36998add400322db6aae8612d3fcf/tenor.gif?itemid=15122473" alt="Carregando"/>
+      </div>
+      }
     </div>
   )
 }

@@ -27,7 +27,7 @@
 
 .featured--info {
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 18px;
     margin-top: 15px;
 }
 
@@ -80,4 +80,31 @@
     margin-top: 15px;
     font-size: 18px;
     color: #ccc ;
+}
+
+
+@media(max-width: 760px){
+    .featured {
+        height: 80vh;
+    }
+    .featured--name {
+        font-size: 40px;
+    }
+    .featured--info {
+        font-size: 16px;
+    }
+    .featured--desc {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .watch--btn,
+    .add--list--btn {
+        font-size: 16px;
+    }
+    .featured--genres {
+        font-size: 14px;
+    }
+    
+
 }
